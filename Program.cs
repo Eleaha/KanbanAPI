@@ -19,8 +19,15 @@ namespace KanbanAPI
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
-                app.UseSwagger();
-                app.UseSwaggerUI();
+                //use for visual studio
+                // app.UseSwagger();
+                // app.UseSwaggerUI();
+
+                //use for vs code
+                app.UseSwaggerUi(options =>
+                    {
+                        options.DocumentPath = "/openapi/v1.json";
+                    });
             }
 
             app.UseHttpsRedirection();
