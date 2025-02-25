@@ -43,13 +43,21 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[35.6.2, )"
+            },
+            "FluentAssertions": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
             "NSwag.AspNetCore": {
               "target": "Package",
               "version": "[14.2.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.6.2, )"
             }
           },
           "imports": [
